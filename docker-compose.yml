@@ -1,0 +1,14 @@
+version: "3.8"
+
+services: 
+  myos:
+    image: harshgautam/go-git:2.0
+    container_name: git-server
+    ports:
+      - "3000:3000"
+    volumes:
+      - /gogs-data:/data                  
+    
+    restart: on-failure
+volumes:
+  gogs-data:
