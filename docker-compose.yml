@@ -2,7 +2,7 @@ version: "3.8"
 
 services: 
   myos:
-    image: harshgautam/go-git:2.0
+    image: harshgautam/go-git:latest
     container_name: git-server
     ports:
       - "3000:3000"
